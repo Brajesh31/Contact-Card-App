@@ -1,0 +1,67 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3b3b3b;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #fff;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+.contact-card p {
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin: 10px;
+  }
+}

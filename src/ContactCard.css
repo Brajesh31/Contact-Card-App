@@ -1,0 +1,83 @@
+/* ContactCard.css */
+
+.contact-card-dark {
+  background-color: #111;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.avatar-circle {
+  background-color: hotpink;
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.contact-buttons button {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.contact-buttons button:hover {
+  background-color: #444;
+}
+
+.contact-info-box {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+  .contact-card-dark {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .avatar-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-buttons button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-info-box {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
