@@ -1,0 +1,10 @@
+stateDiagram-v2
+    [*] --> Empty
+    Empty --> FormEditing: User enters values
+    FormEditing --> ValidationBlocked: Required/email validation fails
+    ValidationBlocked --> FormEditing: User corrects values
+    FormEditing --> ContactAdded: Submit valid form
+    ContactAdded --> FormEditing: Form reset
+    ContactAdded --> ContactVisible: Context consumer rerenders
+    ContactVisible --> FormEditing: Add another contact
+    ContactVisible --> [*]: Page reload clears in-memory state
